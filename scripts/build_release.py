@@ -15,6 +15,15 @@ FILES = ['README.md', 'THIRD_PARTY_NOTICES.md', 'start.command', 'start.bat',
          'docs/images/monitor-prototype.png', 'docs/images/screenshot-prototype.png',
          'docs/images/cover.png', 'docs/images/cases/double11-marketing.png',
          'docs/images/cases/pdf-to-word.png', 'docs/images/cases/child-eye-care.png',
+         'docs/images/guide/01-meet.png',
+         'docs/images/guide/02-workflow.png',
+         'docs/images/guide/03-yuanbao-search.png',
+         'docs/images/guide/04-grill-me.png',
+         'docs/images/guide/05-marketing-case.png',
+         'docs/images/guide/06-pdf-case.png',
+         'docs/images/guide/07-eye-care-case.png',
+         'docs/images/guide/08-evidence-trail.png',
+         'docs/images/guide/09-get-started.png',
          'scripts/build_release.py', 'tests/test_standalone.py']
 
 

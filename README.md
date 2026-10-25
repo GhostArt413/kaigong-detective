@@ -15,6 +15,23 @@
 
 **当前公开版已实现：深度调查与带证据的需求访谈。持续盯梢、截图查证：旧网页原型已验证，正在整合进公开版。**
 
+**快速阅读：** [真实案例](#cases) · [元宝搜索做什么](#yuanbao) · [grill-me 怎么问](#grill-me) · [一条真实证据链](#evidence-trail) · [开始使用](#get-started)
+
+## 当元宝搜索碰上 grill-me
+
+元宝搜索先寻找相似方案和公开资料，开工侦探再沿线追查、读取原文，把新发现交给 grill-me 式访谈：目标是什么、限制能否接受、第一版先验证哪条路。
+
+<p align="center">
+  <a href="docs/images/guide/01-meet.png"><img src="docs/images/guide/01-meet.png" alt="当元宝搜索碰上 grill-me：元宝搜证据，grill-me 问取舍" width="320"></a>
+  <a href="docs/images/guide/02-workflow.png"><img src="docs/images/guide/02-workflow.png" alt="搭档分工：元宝搜索检索资料，grill-me 根据回答继续追问" width="320"></a>
+</p>
+
+**元宝搜证据，grill-me 问取舍。** 查到的新限制会改变下一道问题，你补充的条件也会决定下一步查什么。
+
+本页插画用于解释功能与摘述真实案例，由 AI 生成，点击可查看原图；完整会话长图与真实网页界面另有标注。
+
+<a id="cases"></a>
+
 ## 三个真实案例：做工具、做营销，也能做生活计划
 
 开工侦探不只帮你选技术。做一份营销方案、开发一个小工具，或安排家庭日常，都有值得先查清楚的事实，以及需要结合自己条件作出的选择。
@@ -22,6 +39,12 @@
 下面是使用者提供的三个独立 **Skill 使用会话长图**，按真实对话整理排版，展示在 Agent 中调用开工侦探的过程。截图保留当时的输出；当前版本的使用方式与功能状态见下文。长图可展开阅读，也可点击图片查看原图。
 
 ### 案例一｜双11营销：先问清生意，再制定促销方案
+
+<p align="center">
+  <a href="docs/images/guide/05-marketing-case.png"><img src="docs/images/guide/05-marketing-case.png" alt="营销案例图解：用 Freshness 查近期报道，以 Site 追查京东官方资料，完整规则未取得则保留待核实" width="460"></a>
+</p>
+
+**图解重点：** 元宝搜索用 `Freshness` 筛选近期资料、用 `Site` 追查官方来源。找到的报道进入方案讨论，未查全的商家规则继续标为待核实。
 
 **起点：** 一家主营新疆干果的电商公司，想为第一次双11准备营销方案。
 
@@ -38,6 +61,12 @@
 
 ### 案例二｜PDF 转 Word：选引擎前，先查上游还在不在维护
 
+<p align="center">
+  <a href="docs/images/guide/06-pdf-case.png"><img src="docs/images/guide/06-pdf-case.png" alt="PDF 工具案例图解：两轮元宝搜索、Site 定位 GitHub 上游、核对维护声明后决定先用样本验证" width="460"></a>
+</p>
+
+**图解重点：** 两轮元宝搜索把调查带到 GitHub 上游。维护声明会影响是否采用，也提醒使用者先验证自己的中文、表格与图片样本。
+
 **起点：** 做一个自己使用的 PDF 转 Word 程序。
 
 访谈先确认 PDF 类型、版式要求、使用环境与是否允许云端处理。随后，元宝搜索沿着 GitHub 上游资料继续追查，发现 pdf2docx 的维护状态与部分旧教程说法不同，于是把上游状态、输入边界和样本验证纳入引擎选择。
@@ -52,6 +81,12 @@
 </details>
 
 ### 案例三｜孩子护眼：把公开科普落到家庭每天的安排
+
+<p align="center">
+  <a href="docs/images/guide/07-eye-care-case.png"><img src="docs/images/guide/07-eye-care-case.png" alt="家庭护眼安排图解：元宝搜索用 Site 定位国家卫健委公开科普，再结合家庭作息提问" width="460"></a>
+</p>
+
+**图解重点：** 元宝搜索通过 `Site` 定位国家卫健委公开资料，再把查到的建议与放学时间、作业量和日间户外条件放在一起讨论。
 
 **起点：** 为小学三年级的孩子制定一份护眼计划。
 
@@ -152,7 +187,15 @@
 
 一次调查，帮你带走三样东西：**问清楚的需求、排过优先级的方案、能回头核对的证据。**
 
+<a id="yuanbao"></a>
+
 ## 元宝搜索，让好想法更接近“做得出来”
+
+<p align="center">
+  <a href="docs/images/guide/03-yuanbao-search.png"><img src="docs/images/guide/03-yuanbao-search.png" alt="元宝搜索能力图解：全网检索、Site 站点限定、Freshness 时效过滤，以及开工侦探编排的多轮追查" width="460"></a>
+</p>
+
+**先看四件具体的事：** 找相似项目、定位官网与上游、筛选近期资料，再沿线索继续查。`Site`、`Freshness` 是元宝接口参数；多轮追查和原文核对由开工侦探编排，具体版本与实测范围见下方说明。
 
 **元宝搜索是开工侦探的调查引擎。** 相似项目发现、后续追查与查询收据都通过元宝 SearchPro 取得；原文读取和证据核对接在真实搜索结果之后，再形成有来源的问题、建议和方案比较。
 
@@ -178,7 +221,15 @@
 
 以上服务能力来自[元宝搜索官网](https://cloud.tencent.com/product/wsa)。官网还标注最快 **300ms** 返回搜索结果；这是搜索服务的能力介绍，整份调查还包含多轮检索、原文读取和模型推理，耗时另计。
 
+<a id="grill-me"></a>
+
 ## 30万+ Star 的技能项目，遇上元宝搜索
+
+<p align="center">
+  <a href="docs/images/guide/04-grill-me.png"><img src="docs/images/guide/04-grill-me.png" alt="grill-me 访谈方法图解：从简单一点和都行等模糊想法，追问给谁用、第一版范围与验收标准" width="460"></a>
+</p>
+
+**搜索补事实，访谈问选择。** grill-me 用决策树把“简单一点”“都行”拆成能回答的问题；在开工侦探中，这些问题还会结合元宝查到的来源与限制。图中上游封面来自使用者提供的 Matt Pocock / skills 资料，用于注明出处。
 
 [Matt Pocock 的 skills 仓库](https://github.com/mattpocock/skills)已获得 **30万+ GitHub Stars**。作者在 README 中将 grill-me 列为自己最受欢迎的技能之一：通过持续访谈，把想法拆成决策树，先问当前能决定的问题，等你回答后再展开下一层。
 
@@ -202,6 +253,18 @@
 **真实联调需求：** 做一个给自己和固定小团队使用的网页，把有文字层的中文 PDF 转成可编辑 Word，支持普通单栏、简单表格和图片，内容正确优先。
 
 这次成功联调中，开工侦探通过元宝完成了 **2次有前后依赖的真实查询**，程序随后读取了 **6份原文**。后续访谈与独立复核复用了这批证据。
+
+<a id="evidence-trail"></a>
+
+### 一条真实证据，怎样变成下一道问题
+
+<p align="center">
+  <a href="docs/images/guide/08-evidence-trail.png"><img src="docs/images/guide/08-evidence-trail.png" alt="真实网页联调证据链图解：元宝查询与 Site 参数、secure-pdf-tools README 原文，以及由此产生的浏览器内转换追问" width="460"></a>
+</p>
+
+图中查询词、来源与逐字引文取自这份已保存的联调案卷，追问采用内容摘述。`secure-pdf-tools` 的“文件绝不离开您的设备”属于项目 README 自述；调查据此提出浏览器内转换的选项，实际转换效果仍需样本验证。原始来源见 [secure-pdf-tools README](https://github.com/TDLG12313/secure-pdf-tools/blob/main/README.md)。
+
+**这份调查还查到了什么：**
 
 | 调查发现 | 对使用者的实际帮助 |
 | --- | --- |
@@ -252,6 +315,16 @@
 当前网页已真实验证 `Site`；其余高阶选项已接入并做离线参数校验，尚未在当前账号逐项实测。高阶参数按需要启用，失败保留记录，不自动购买或升级服务。本地 `limit` 只截取展示列表，不改变单次请求费用。
 
 </details>
+
+<a id="get-started"></a>
+
+## 从你的一个想法开始
+
+<p align="center">
+  <a href="docs/images/guide/09-get-started.png"><img src="docs/images/guide/09-get-started.png" alt="开工侦探使用入口：Agent Skill 与独立网页本地版，连接自己的元宝搜索与模型接口后开始调查" width="460"></a>
+</p>
+
+已经使用支持 Skills 的 Agent，可以安装技能；希望从浏览器进入，可以下载完整 HTML 本地包，按下方命令启动本机服务。两个入口都需要自己的元宝搜索连接；本地网页另需模型接口。
 
 ## 使用方式一：下载 HTML 本地版
 
