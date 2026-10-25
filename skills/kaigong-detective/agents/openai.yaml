@@ -1,0 +1,4 @@
+interface:
+  display_name: "开工侦探"
+  short_description: "决策树访谈，按需用元宝搜索追查相似项目，提出有来源的问题和方案优先级"
+  default_prompt: "用 $kaigong-detective 打磨我的想法，普通问题标为“开工侦探提问”，搜索产生的问题标为“开工侦探经过元宝搜索后提问”；给出推荐及依据，必要时多轮追查并比较方案。"

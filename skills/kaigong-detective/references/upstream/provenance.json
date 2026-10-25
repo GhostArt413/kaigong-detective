@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/mattpocock/skills",
+  "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+  "files": {
+    "grill-me.md": {
+      "path": "skills/productivity/grill-me/SKILL.md",
+      "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md",
+      "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637"
+    },
+    "grilling.md": {
+      "path": "skills/productivity/grilling/SKILL.md",
+      "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md",
+      "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15"
+    },
+    "LICENSE": {
+      "path": "LICENSE",
+      "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    }
+  }
+}
