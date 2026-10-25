@@ -13,6 +13,8 @@ FILES = ['README.md', 'THIRD_PARTY_NOTICES.md', 'start.command', 'start.bat',
          'standalone/开工侦探.html', 'standalone/server.py', 'standalone/__init__.py', 'standalone/preview.png',
          'docs/advanced-status.md', 'docs/images/deep-investigation.png',
          'docs/images/monitor-prototype.png', 'docs/images/screenshot-prototype.png',
+         'docs/images/cover.png', 'docs/images/cases/double11-marketing.png',
+         'docs/images/cases/pdf-to-word.png', 'docs/images/cases/child-eye-care.png',
          'scripts/build_release.py', 'tests/test_standalone.py']
 
 
