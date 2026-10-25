@@ -15,7 +15,7 @@
 
 **当前公开版已实现：深度调查与带证据的需求访谈。持续盯梢、截图查证：旧网页原型已验证，正在整合进公开版。**
 
-**快速阅读：** [真实案例](#cases) · [元宝搜索做什么](#yuanbao) · [grill-me 怎么问](#grill-me) · [一条真实证据链](#evidence-trail) · [开始使用](#get-started)
+**快速阅读：** [网页版界面](#web-preview) · [真实案例](#cases) · [元宝搜索做什么](#yuanbao) · [grill-me 怎么问](#grill-me) · [一条真实证据链](#evidence-trail) · [开始使用](#get-started)
 
 ## 当元宝搜索碰上 grill-me
 
@@ -29,6 +29,46 @@
 **元宝搜证据，grill-me 问取舍。** 查到的新限制会改变下一道问题，你补充的条件也会决定下一步查什么。
 
 本页插画用于解释功能与摘述真实案例，由 AI 生成，点击可查看原图；完整会话长图与真实网页界面另有标注。
+
+<a id="web-preview"></a>
+
+## 网页版实际长什么样
+
+从输入想法到审阅依据，四个画面看完一次使用流程。以下均为实际网页截图，点击可以查看原图。
+
+### 1. 新建调查：从一句想法开始
+
+在首页描述想做的作品、服务对象和已有条件；元宝搜索与模型接口在“连接设置”中配置。高级筛选可按调查需要启用，站点由调查过程选择。
+
+<p align="center">
+  <a href="standalone/preview.png"><img src="standalone/preview.png" alt="网页版实际首页：输入需求、新建调查与连接设置" width="860"></a>
+</p>
+
+### 2. 带依据的追问：问题和推荐都能展开看出处
+
+这里以“给社区烘焙店做临期面包预订工具”为例。页面展示本轮发现、待决定的问题和推荐，并分别展开“为什么问这一题”“为什么这样推荐”。使用者可以查看原文链接、保留不同意见，再决定怎么回答。
+
+<p align="center">
+  <a href="docs/images/web/interview.png"><img src="docs/images/web/interview.png" alt="网页版真实调查：烘焙店预订需求、带元宝搜索依据的追问和推荐、原文来源与回答入口" width="860"></a>
+</p>
+
+### 3. 方案优先级：看适配理由，也看差距与待验证项
+
+切换到“方案优先级”，比较候选的可借用部分、复用代价、证据与未知。P1 / P2 / P3 是针对当前需求的验证顺序，使用者可以展开“方案依据”核对原文。
+
+<p align="center">
+  <a href="docs/images/web/priorities.png"><img src="docs/images/web/priorities.png" alt="网页版方案优先级：比较候选项目、P1/P2/P3、适配差距、排序依据和来源" width="860"></a>
+</p>
+
+### 4. 搜索与证据：元宝查了什么，原文读到了哪里
+
+切换到“搜索与证据”，查看真实查询词、`Site` 参数、RequestId 和前后追查关系；原文读取成功与只有搜索摘要的资料分别标注，让每项发现都能回头核对。RequestId 是查询追踪标识。
+
+<p align="center">
+  <a href="docs/images/web/search-evidence.png"><img src="docs/images/web/search-evidence.png" alt="网页版真实元宝搜索收据：两轮查询、Site 参数、RequestId、追查理由与原文及摘要状态" width="860"></a>
+</p>
+
+*首页图为本地版界面；后三张取自 2026-10-25 的同一份真实调查，完成了 2 次元宝搜索、读取了 5 份原文。这里展示已保存的网页截图，不会重新发起搜索；使用者尚未提交回答或确认最终路线。*
 
 <a id="cases"></a>
 
@@ -102,13 +142,6 @@
 </details>
 
 **三种需求，同一套方法：元宝搜索补齐事实，grill-me 问清取舍，再由使用者决定下一步。**
-
-<details>
-<summary>查看 HTML 本地版首页</summary>
-
-![开工侦探本地版首页](standalone/preview.png)
-
-</details>
 
 ## 核心能力：让每个选择，都有一条证据链
 

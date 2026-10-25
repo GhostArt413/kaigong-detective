@@ -24,6 +24,9 @@ FILES = ['README.md', 'THIRD_PARTY_NOTICES.md', 'start.command', 'start.bat',
          'docs/images/guide/07-eye-care-case.png',
          'docs/images/guide/08-evidence-trail.png',
          'docs/images/guide/09-get-started.png',
+         'docs/images/web/interview.png',
+         'docs/images/web/priorities.png',
+         'docs/images/web/search-evidence.png',
          'scripts/build_release.py', 'tests/test_standalone.py']
 
 
